@@ -37,9 +37,9 @@
 
 <addon id="zararepo.repository" name="Zara Repo" version="0.0.2" provider-name="Zara">
 	<extension point="xbmc.addon.repository" name="Zara Repo">
-		<info compressed="false">https://raw.githubusercontent.com/ZaraSeries/ZaraSeries-kodi-repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/ZaraSeries/ZaraSeries-kodi-repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/ZaraSeries/ZaraSeries-kodi-repo/master/repo/</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/ZaraSeries/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/ZaraSeries/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/ZaraSeries/repo/master/repo/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Zara Repo</summary>
