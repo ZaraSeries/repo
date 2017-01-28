@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.zaraseries" name="Zara Series" version="0.0.2" provider-name="Zara">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+	<import addon="script.module.requests" version="2.4.3"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <summary lang="en">Zara Series</summary>
+    <description lang="en">As melhores series você encontra aqui</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addons>
+<addon id="plugin.video.seriesci" name="Series Ci" version="0.0.2" provider-name="Zara">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+	<import addon="script.module.requests" version="2.4.3"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <summary lang="en">Series CI</summary>
+    <description lang="en">As melhores series você encontra aqui</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="zararepo.repository" name="Zara Repo" version="0.0.1" provider-name="Zara">
+	<extension point="xbmc.addon.repository" name="Zara Repo">
+		<info compressed="false">https://raw.githubusercontent.com/ZaraSeries/ZaraSeries-kodi-repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/ZaraSeries/ZaraSeries-kodi-repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/ZaraSeries/ZaraSeries-kodi-repo/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Zara Repo</summary>
+		<description>Os melhores add-ons para kodi</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>

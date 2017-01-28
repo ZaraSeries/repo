@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="zararepo.repository" name="Zara Repo" version="0.0.1" provider-name="Zara">
+	<extension point="xbmc.addon.repository" name="Zara Repo">
+		<info compressed="false">https://raw.githubusercontent.com/ZaraSeries/ZaraSeries-kodi-repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/ZaraSeries/ZaraSeries-kodi-repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/ZaraSeries/ZaraSeries-kodi-repo/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Zara Repo</summary>
+		<description>Os melhores Add-ons para kodi</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
