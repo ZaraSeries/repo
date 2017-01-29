@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.zaraseries"
        name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="Zara Series">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
