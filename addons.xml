@@ -18,8 +18,8 @@
 </addon>
 
 <addon id="plugin.video.zaraseries"
-       name="Zara Series"
-       version="0.0.3"
+       name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]"
+       version="1.0.0"
        provider-name="Zara Series">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -42,7 +42,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Zara Seriws </summary>
+    <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]</summary>
     <description lang="en">As melhores series você encontra aqui!</description>
     <platform>all</platform>
   </extension>
