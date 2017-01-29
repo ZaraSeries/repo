@@ -48,4 +48,36 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.seriesci"
+       name="[COLOR green][B]Series[/B][/COLOR] [COLOR white][B]Ci[/B][/COLOR]"
+       version="1.0.0"
+       provider-name="By Zara">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson" /> 
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR green][B]Series[/B][/COLOR] [COLOR white][B]Ci[/B][/COLOR]</summary>
+    <description lang="en">As melhores series vocês encontram aqui!</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 </addons>
