@@ -1,4 +1,4 @@
 import xbmcaddon
 
-MainBase = 'https://raw.githubusercontent.com/ZaraSeries/lista/master/ZaraTV.m3u'
+MainBase = 'http://pastebin.com/raw/xmnn7ySW'
 addon = xbmcaddon.Addon('plugin.video.Zara_TV')
