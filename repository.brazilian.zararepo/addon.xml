@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.brazilian.zararepo"
+        name="[COLOR white][B]Zara Repo[/B][/COLOR]"
+        version="1.0.1"
+        provider-name="vitorhirota">
+    <extension point="xbmc.addon.repository" name="Brazilian XBMC Add-on Repository">
+        <info compressed="false">http://repo.frasesdaci.com/repo/addons.xml</info>
+        <checksum>http://repo.frasesdaci.com/repo/addons.xml.md5</checksum>
+        <datadir zip="true">http://repo.frasesdaci.com/repo/repo</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR white][B]Zara Repo[/B][/COLOR]</summary>
+        <description>O melhor repositorio BR</description>
+        <platform>all</platform>
+    </extension>
+</addon>

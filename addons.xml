@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.zaraseries" name="Zara Series" version="0.0.2" provider-name="Zara">
+
+<addon id="repository.brazilian.zararepo"
+        name="[COLOR white][B]Zara Repo[/B][/COLOR]"
+        version="1.0.1"
+        provider-name="vitorhirota">
+    <extension point="xbmc.addon.repository" name="Brazilian XBMC Add-on Repository">
+        <info compressed="false">http://repo.frasesdaci.com/repo/addons.xml</info>
+        <checksum>http://repo.frasesdaci.com/repo/addons.xml.md5</checksum>
+        <datadir zip="true">http://repo.frasesdaci.com/repo/repo</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR white][B]Zara Repo[/B][/COLOR]</summary>
+        <description>O melhor repositorio BR</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.zaraseries"
+       name="Zara Series"
+       version="0.0.3"
+       provider-name="Zara Series">
   <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-	<import addon="script.module.requests" version="2.4.3"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" /> 
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
   </requires>
-  <extension point="xbmc.python.pluginsource" library="main.py">
+  <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <language>en</language>
-    <platform>all</platform>
-    <summary lang="en">Zara Series</summary>
-    <description lang="en">As melhores series você encontra aqui</description>
+    <summary lang="en">Zara Seriws </summary>
+    <description lang="en">As melhores series você encontra aqui!</description>
     <platform>all</platform>
   </extension>
 </addon>
 
-<addons>
-<addon id="plugin.video.seriesci" name="Series Ci" version="0.0.2" provider-name="Zara">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-	<import addon="script.module.requests" version="2.4.3"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="main.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>en</language>
-    <platform>all</platform>
-    <summary lang="en">Series CI</summary>
-    <description lang="en">As melhores series você encontra aqui</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="zararepo.repository" name="Zara Repo" version="0.0.2" provider-name="Zara">
-	<extension point="xbmc.addon.repository" name="Zara Repo">
-		<info compressed="false">https://github.com/ZaraSeries/repo/raw/master/addons.xml</info>
-		<checksum>https://github.com/ZaraSeries/repo/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/ZaraSeries/repo/raw/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Zara Repo</summary>
-		<description>Os melhores add-ons para kodi</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
 </addons>

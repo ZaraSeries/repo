@@ -1,0 +1,23 @@
+0.1.2.2
+ PT: adicionado perfil ao processo de autenticação
+ EN: added profile to authentication process
+
+0.1.2.1
+ PT: correçoes variadas
+ EN: general bug-fixes
+
+0.1.2
+ PT: adicionado autorização para NET
+ EN: added authorization for NET
+
+0.1.1.1
+ PT: correção de erro
+ EN: bugfix
+
+0.1.1
+ PT: correção de erros
+ EN: bugfixes
+
+0.1
+ PT: Primeira versão alpha, apenas alguns vídeos e autorização pela GVT funcionais.
+ EN: First alpha, just some videos and gvt auth working.
