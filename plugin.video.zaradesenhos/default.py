@@ -33,7 +33,7 @@ addon = _Edit.addon
 addon_version = addon.getAddonInfo('version')
 profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 home = xbmc.translatePath(addon.getAddonInfo('path').decode('utf-8'))
-favorites = os.path.join(profile, 'favorites')
+favoritos = os.path.join(profile, 'favoritos')
 history = os.path.join(profile, 'history')
 
 REV = os.path.join(profile, 'list_revision')
@@ -44,8 +44,8 @@ functions_dir = profile
 
 downloader = downloader.SimpleDownloader()
 debug = addon.getSetting('debug')
-if os.path.exists(favorites)==True:
-    FAV = open(favorites).read()
+if os.path.exists(favoritos)==True:
+    FAV = open(favoritos).read()
 else: FAV = []
 if os.path.exists(source_file)==True:
     SOURCES = open(source_file).read()
@@ -79,14 +79,14 @@ def makeRequest(url, headers=None):
 				
 def SKindex():
     addon_log("SKindex")
-    addDir('Favorites','Favorites',4,'http://goo.gl/TyDD6w' ,  FANART,'','','','')
+    addDir('Favoritos','Favoritos',4,'http://goo.gl/TyDD6w' ,  FANART,'','','','')
     getData(_Edit.MainBase,'')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		
 	
 def getSources():
-        if os.path.exists(favorites) == True:
-            addDir('Favorites','url',4,os.path.join(home, 'resources', 'favorite.png'),FANART,'','','','')
+        if os.path.exists(favoritos) == True:
+            addDir('Favoritos','url',4,os.path.join(home, 'resources', 'favorite.png'),FANART,'','','','')
         if addon.getSetting("browse_xml_database") == "true":
             addDir('XML Database','http://xbmcplus.xb.funpic.de/www-data/filesystem/',15,icon,FANART,'','','','')
         if addon.getSetting("browse_community") == "true":
@@ -1855,8 +1855,8 @@ def get_params():
         return param
 
 
-def getFavorites():
-        items = json.loads(open(favorites).read())
+def getfavoritos():
+        items = json.loads(open(favoritos).read())
         total = len(items)
         for i in items:
             name = i[0]
@@ -1884,8 +1884,8 @@ def getFavorites():
 
 def addFavorite(name,url,iconimage,fanart,mode,playlist=None,regexs=None):
         favList = []
-        if not os.path.exists(favorites + 'txt'):
-            os.makedirs(favorites + 'txt')
+        if not os.path.exists(favoritos + 'txt'):
+            os.makedirs(favoritos + 'txt')
         if not os.path.exists(history):
             os.makedirs(history)
         try:
@@ -1893,28 +1893,28 @@ def addFavorite(name,url,iconimage,fanart,mode,playlist=None,regexs=None):
             name = name.encode('utf-8', 'ignore')
         except:
             pass
-        if os.path.exists(favorites)==False:
-            addon_log('Making Favorites File')
+        if os.path.exists(favoritos)==False:
+            addon_log('Making favoritos File')
             favList.append((name,url,iconimage,fanart,mode,playlist,regexs))
-            a = open(favorites, "w")
+            a = open(favoritos, "w")
             a.write(json.dumps(favList))
             a.close()
         else:
-            addon_log('Appending Favorites')
-            a = open(favorites).read()
+            addon_log('Appending favoritos')
+            a = open(favoritos).read()
             data = json.loads(a)
             data.append((name,url,iconimage,fanart,mode))
-            b = open(favorites, "w")
+            b = open(favoritos, "w")
             b.write(json.dumps(data))
             b.close()
 
 
 def rmFavorite(name):
-        data = json.loads(open(favorites).read())
+        data = json.loads(open(favoritos).read())
         for index in range(len(data)):
             if data[index][0]==name:
                 del data[index]
-                b = open(favorites, "w")
+                b = open(favoritos, "w")
                 b.write(json.dumps(data))
                 b.close()
                 break
@@ -2025,11 +2025,11 @@ def addDir(name,url,mode,iconimage,fanart,description,genre,date,credits,showcon
                 contextMenu.append(('Download','XBMC.RunPlugin(%s?url=%s&mode=9&name=%s)'
                                     %(sys.argv[0], urllib.quote_plus(url), urllib.quote_plus(name))))
             elif showcontext == 'fav':
-                contextMenu.append(('Remove from Add-on Favorites','XBMC.RunPlugin(%s?mode=6&name=%s)'
+                contextMenu.append(('Remove from Add-on favoritos','XBMC.RunPlugin(%s?mode=6&name=%s)'
                                     %(sys.argv[0], urllib.quote_plus(name))))
 									
             if not name in FAV:
-                contextMenu.append(('Add to Add-on Favorites','XBMC.RunPlugin(%s?mode=5&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
+                contextMenu.append(('Add to Add-on favoritos','XBMC.RunPlugin(%s?mode=5&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
                          %(sys.argv[0], urllib.quote_plus(name), urllib.quote_plus(url), urllib.quote_plus(iconimage), urllib.quote_plus(fanart), mode)))
             liz.addContextMenuItems(contextMenu)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
@@ -2286,7 +2286,7 @@ def addLink(url,name,iconimage,fanart,description,genre,date,showcontext,playlis
             contextMenu = []
             if showcontext == 'fav':
                 contextMenu.append(
-                    ('Remove from Add-on Favorites','XBMC.RunPlugin(%s?mode=6&name=%s)'
+                    ('Remove from Add-on favoritos','XBMC.RunPlugin(%s?mode=6&name=%s)'
                      %(sys.argv[0], urllib.quote_plus(name)))
                      )
             elif not name in FAV:
@@ -2298,7 +2298,7 @@ def addLink(url,name,iconimage,fanart,description,genre,date,showcontext,playlis
                     fav_params += 'playlist='+urllib.quote_plus(str(playlist).replace(',','||'))
                 if regexs:
                     fav_params += "&regexs="+regexs
-                contextMenu.append(('Add to Add-on Favorites','XBMC.RunPlugin(%s)' %fav_params))
+                contextMenu.append(('Add to Add-on favoritos','XBMC.RunPlugin(%s)' %fav_params))
             liz.addContextMenuItems(contextMenu)
        
         if not playlist is None:
@@ -2442,8 +2442,8 @@ elif mode==3:
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
 elif mode==4:
-    addon_log("getFavorites")
-    getFavorites()
+    addon_log("getfavoritos")
+    getfavoritos()
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
 elif mode==5:
