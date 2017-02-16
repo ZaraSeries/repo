@@ -1,0 +1,92 @@
+[
+    {
+        "url": "http://bit.ly/flancamento_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/lancamentos.png", 
+        "name": "Lancamentos"
+    }, 
+    {
+        "url": "http://bit.ly/f2016_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/2016.png", 
+        "name": "2016"
+    }, 
+	{
+        "url": "http://bit.ly/f2015_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/2015.png", 
+        "name": "2015"
+    }, 
+    {
+        "url": "http://bit.ly/f2014_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/2014.png", 
+        "name": "2014"
+    }, 
+    {
+        "url": "http://bit.ly/f2013_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/2013.png", 
+        "name": "2013"
+    }, 
+    {
+        "url": "http://bit.ly/f2012_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/2012.png", 
+        "name": "2012"
+    }, 
+    {
+        "url": "http://bit.ly/f2011_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/2011.png", 
+        "name": "2011"
+    }, 
+    {
+        "url": "http://bit.ly/f2010_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/2010.png", 
+        "name": "2010"
+    }, 
+    {
+        "url": "http://bit.ly/f2009a2000_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/09a00.png", 
+        "name": "2009 a 2000"
+    }, 
+    {
+        "url": "http://bit.ly/f1999a1990_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/99a90.png", 
+        "name": "1999 a 1990"
+    }, 
+    {
+        "url": "http://bit.ly/f1989a1980_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/89a80.png", 
+        "name": "1989 a 1980"
+    }, 
+    {
+        "url": "http://bit.ly/f1979a1951_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/79a51.png", 
+        "name": "1979 a 1951"
+    }, 
+    {
+        "url": "http://bit.ly/fordemalfa_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/AaZ.png", 
+        "name": "Ordem Alfabetica"
+    }, 
+    {
+        "url": "http://bit.ly/fcrackle_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/crackle.png", 
+        "name": "Crackle"
+    }, 
+    {
+        "url": "http://bit.ly/fcinebr_foliver", 
+        "logos": "", 
+        "image": "special://home/addons/plugin.video.brfilmes/capas/cinebr.png", 
+        "name": "Cine BR"
+    }
+]
