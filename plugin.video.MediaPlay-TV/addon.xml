@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.MediaPlay-TV" name="MediaPlay-TV 4.0" version="4.0" provider-name="HighorIPTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" version="3.0.9"/>
+    <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Nosso Addon Traz a Revolução do IPTV com esse novo designer agora em nova Versão a 4.0 2017 Venha Ser surpreender com o novo. o melhor Addon de tv Brasileira atualmente com mais de 2000 canais de servidores</summary>
+        <description>-ADDON TOTALMENTE GRATIS- NÃO ACEITE IMITAÇÕES - Nova versão do Addon que vem a cada dia mais trazendo o melhor do IPTV e de forma GRATIS para o seu bem-Estar atualmente são mais de 30.000 pessoas com o Addon MediaPlayTV se tornando o GIGANTE dos Addons BR Venha Curti Esse Novo Conceito De IPTV e não se DEIXE ENGANAR com Falsos Addons Aproveite CURTA MINHA PAGINA DO FACEBOOK: https://www.facebook.com/LISTASIPTV/ INSCREVA-SE NO MEU CANAL DO YOUTUBE: https://www.youtube.com/channel/UCowQVNCeBfPbgWuxarAX9qA</description>
+  </extension>
+</addon>
