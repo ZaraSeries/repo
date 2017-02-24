@@ -1,4 +1,4 @@
 import xbmcaddon
 
-MainBase = 'http://pastebin.com/raw/UrLXXipC'
+MainBase = 'https://goo.gl/pg8IOc'
 addon = xbmcaddon.Addon('plugin.video.zaraseries')
