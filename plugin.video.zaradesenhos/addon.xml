@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.zaradesenhos"
        name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Desenhos[/B][/COLOR]"
-       version="1.0.3"
+       version="1.0.4"
        provider-name="Zara">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -25,7 +25,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Desenhos[/B][/COLOR]</summary>
-    <description lang="en">As melhores series você encontra aqui!</description>
+    <description lang="en">Os melhores desenhos você encontra aqui!</description>
     <platform>all</platform>
   </extension>
 </addon>

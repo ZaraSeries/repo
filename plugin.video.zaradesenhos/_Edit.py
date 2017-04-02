@@ -1,4 +1,4 @@
 import xbmcaddon
 
-MainBase = 'http://pastebin.com/raw/M8S3xjty'
+MainBase = 'https://goo.gl/9ukptE'
 addon = xbmcaddon.Addon('plugin.video.zaradesenhos')
