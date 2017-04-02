@@ -128,6 +128,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.zaradesenhos"
        name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Desenhos[/B][/COLOR]"
        version="1.0.4"
