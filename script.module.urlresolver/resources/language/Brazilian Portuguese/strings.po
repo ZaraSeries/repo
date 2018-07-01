@@ -1,0 +1,207 @@
+# Addon Name: URLResolver
+# Addon id: script.module.urlresolver
+# Addon Provider:
+# Translators:
+# Deco, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: DA-MO-YEAR HO:MI+ZONE\n"
+"PO-Revision-Date: DA-MO-YEAR HO:MI+ZONE\n"
+"Last-Translator: Deco, 2018\n"
+"Language-Team: Brazilian Portuguese ()\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#33000"
+msgid "Autorização de Stream OpenLoad"
+msgstr "Autorização de Stream OpenLoad"
+
+msgctxt "#33001"
+msgid "Para Para reproduzir este vídeo, é necessária autorização "
+msgstr "Para reproduzir este vídeo, é necessária autorização"
+
+msgctxt "#33002"
+msgid "Visite o link abaixo para autorizar os dispositivos em sua rede:"
+msgstr "Visite o link abaixo para autorizar os dispositivos em sua rede:"
+
+msgctxt "#33003"
+msgid "[B][COLOR blue]%s[/COLOR][/B] depois clique em 'Pair'"
+msgstr "[B][COLOR blue]%s[/COLOR][/B] depois clique em 'Pair'"
+
+msgctxt "#33004"
+msgid "Nenhuma autorização OpenLoad"
+msgstr "Nenhuma autorização OpenLoad"
+
+msgctxt "#33005"
+msgid "Atualizar automaticamente o resolvedor"
+msgstr "Atualizar automaticamente o resolvedor"
+
+msgctxt "#33006"
+msgid "URL de atualização automática"
+msgstr "URL de atualização automática"
+
+msgctxt "#33007"
+msgid "Chave de descriptografia"
+msgstr "Chave de descriptografia"
+
+msgctxt "#33008"
+msgid "Autorização de Stream TheVideo.me"
+msgstr "Autorização de Stream TheVideo.me"
+
+msgctxt "#33009"
+msgid "Autorização de VidUP.me"
+msgstr "Autorização de VidUP.me"
+
+msgctxt "#33010"
+msgid "Ativar resolvedores universais"
+msgstr "Ativar resolvedores universais"
+
+msgctxt "#33011"
+msgid "Escolher automaticamente melhor qualidade"
+msgstr "Escolher automaticamente melhor qualidade"
+
+msgctxt "#33012"
+msgid "Use o cache de funções"
+msgstr "Use o cache de funções"
+
+msgctxt "#33013"
+msgid "Reiniciar o cache de funções"
+msgstr "Reiniciar o cache de funções"
+
+msgctxt "#33014"
+msgid "Resolvedores Universais"
+msgstr "Resolvedores Universais"
+
+msgctxt "#33015"
+msgid "Resolvedores"
+msgstr "Resolvedores"
+
+msgctxt "#33016"
+msgid "Prioridade"
+msgstr "Prioridade"
+
+msgctxt "#33017"
+msgid "Ativado"
+msgstr "Ativado"
+
+msgctxt "#33018"
+msgid "Resolvedor Real-Debrid autorizado"
+msgstr "Resolvedor Real-Debrid autorizado"
+
+msgctxt "#33019"
+msgid "Redefinição de Autorização Real-Debrid"
+msgstr "Redefinição de Autorização Real-Debrid"
+
+msgctxt "#33020"
+msgid "Redefinição de Cache"
+msgstr "Redefinição de Cache"
+
+msgctxt "#33021"
+msgid "Redefinição de cache falhou"
+msgstr "Redefinição de cache falhou"
+
+msgctxt "#33022"
+msgid "Logar"
+msgstr "Logar"
+
+msgctxt "#33023"
+msgid "Nome de usuário"
+msgstr "Nome de usuário"
+
+msgctxt "#33024"
+msgid "Senha"
+msgstr "Senha"
+
+msgctxt "#33025"
+msgid "Use HTTPS"
+msgstr "Use HTTPS"
+
+msgctxt "#33026"
+msgid "Customer ID"
+msgstr "Customer ID"
+
+msgctxt "#33027"
+msgid "PIN"
+msgstr "PIN"
+
+msgctxt "#33028"
+msgid "Escolha o Link Primário Automaticamente"
+msgstr "Escolha o Link Primário Automaticamente"
+
+msgctxt "#33029"
+msgid "(Re)Autorizar minha conta"
+msgstr "(Re)Autorizar minha conta"
+
+msgctxt "#33030"
+msgid "Redefinir minha autorização"
+msgstr "Redefinir minha autorizaçãon"
+
+msgctxt "#33031"
+msgid "Resolver Auto-Atualizado"
+msgstr "Resolver Auto-Atualizado"
+
+msgctxt "#33032"
+msgid "Digite as letras na imagem"
+msgstr "Digite as letras na imagem"
+
+msgctxt "#33033"
+msgid "Erro no Captcha"
+msgstr "Erro no Captcha"
+
+msgctxt "#33034"
+msgid "Escolha o link"
+msgstr "Escolha o link"
+
+msgctxt "#33035"
+msgid "Nenhum link selecionado"
+msgstr "Nenhum link selecionado"
+
+msgctxt "#33036"
+msgid "Nenhum link de vídeo encontrado"
+msgstr "Nenhum link de vídeo encontrado"
+
+msgctxt "#33037"
+msgid "Captcha: %s [I](2 Rodadas são típicas)[/I]"
+msgstr "Captcha: %s [I](2 Rodadas são típicas)[/I]"
+
+msgctxt "#33038"
+msgid "Cencelar"
+msgstr "Cencelar"
+
+msgctxt "#33039"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "#33040"
+msgid "Emparelhamento de autorização de fluxo IP"
+msgstr "Emparelhamento de autorização de fluxo IP"
+
+msgctxt "#33041"
+msgid "Nenhuma autorização de IP"
+msgstr "Nenhuma autorização de IP"
+
+msgctxt "#33042"
+msgid "Identificação de cliente"
+msgstr "Identificação de cliente"
+
+msgctxt "#33043"
+msgid "Autorização de Fluxo Vshare.eu"
+msgstr "Autorização de Fluxo Vshare.eu"
+
+msgctxt "#33044"
+msgid "Autorização de Fluxo Flashx"
+msgstr "Autorização de Fluxo Flashx"
+
+#, fuzzy
+msgctxt "#33045"
+msgid "Redefinição de Autorização AllDebrid"
+msgstr "Redefinição de Autorização Real-Debrid"
+
+#, fuzzy
+msgctxt "#33046"
+msgid "Resolvedor AllDebrid autorizado"
+msgstr "Resolvedor Real-Debrid autorizado"
