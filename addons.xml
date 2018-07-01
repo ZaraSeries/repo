@@ -1,56 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-
-<addon id="repository.brazilian.zararepo"
-        name="[COLOR white][B]Zara Repo[/B][/COLOR]"
-        version="1.0.6"
-        provider-name="Zara">
-    <extension point="xbmc.addon.repository" name="Brazilian XBMC Add-on Repository">
-        <info compressed="false">http://raw.githubusercontent.com/ZaraSeries/repo/master/addons.xml</info>
-        <checksum>http://raw.githubusercontent.com/ZaraSeries/repo/master/addons.xml.md5</checksum>
-        <datadir zip="true">http://raw.githubusercontent.com/ZaraSeries/repo/master/repo</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>[COLOR white][B]Zara Repo[/B][/COLOR]</summary>
-        <description>O melhor repositorio BR</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="plugin.video.zaraseries"
-       name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]"
-       version="1.0.4"
-       provider-name="Zara Series">
+<addon id="plugin.video.MediaPlay-TV" name="MediaPlay-TV 4.0" version="4.0" provider-name="HighorIPTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" /> 
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" version="3.0.9"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]</summary>
-    <description lang="en">As Series mais famosas estão aqui no [COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]</description>
-    <platform>all</platform>
+        <platform>all</platform>
+        <summary>Nosso Addon Traz a RevoluÃ§Ã£o do IPTV com esse novo designer agora em nova VersÃ£o a 4.0 2017 Venha Ser surpreender com o novo. o melhor Addon de tv Brasileira atualmente com mais de 2000 canais de servidores</summary>
+        <description>-ADDON TOTALMENTE GRATIS- NÃƒO ACEITE IMITAÃ‡Ã•ES - Nova versÃ£o do Addon que vem a cada dia mais trazendo o melhor do IPTV e de forma GRATIS para o seu bem-Estar atualmente sÃ£o mais de 30.000 pessoas com o Addon MediaPlayTV se tornando o GIGANTE dos Addons BR Venha Curti Esse Novo Conceito De IPTV e nÃ£o se DEIXE ENGANAR com Falsos Addons Aproveite CURTA MINHA PAGINA DO FACEBOOK: https://www.facebook.com/LISTASIPTV/ INSCREVA-SE NO MEU CANAL DO YOUTUBE: https://www.youtube.com/channel/UCowQVNCeBfPbgWuxarAX9qA</description>
   </extension>
 </addon>
 
 <addon id="plugin.video.playlistLoader" name="[COLOR red][B]Playlist[/B][/COLOR] [COLOR white][B]Loader[/B][/COLOR]" version="2.0.0" provider-name="Zara">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -80,50 +57,18 @@ http://www.hometheater.co.il</description>
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" version="3.0.0"/>
     <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" /> 
+    <import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
 	<import addon="script.module.livestreamer" optional="true"/>
-	
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">[COLOR green][B]Series[/B][/COLOR] [COLOR white][B]Ci[/B][/COLOR]</summary>
-    <description lang="en">As melhores series vocês encontram aqui!</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.Zara_TV"
-       name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]TV[/B][/COLOR]"
-       version="1.0.2"
-       provider-name="By Zara">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" /> 
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-	
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]TV[/B][/COLOR]</summary>
-    <description lang="en">Os Melhores canais você encontra aqui!</description>
+    <description lang="en">As melhores series vocÃªs encontram aqui!</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -144,7 +89,7 @@ http://www.hometheater.co.il</description>
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" version="3.0.0"/>
     <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" /> 
+    <import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
 
@@ -154,7 +99,7 @@ http://www.hometheater.co.il</description>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Desenhos[/B][/COLOR]</summary>
-    <description lang="en">Os melhores desenhos você encontra aqui!</description>
+    <description lang="en">Os melhores desenhos vocÃª encontra aqui!</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -175,20 +120,121 @@ http://www.hometheater.co.il</description>
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" version="3.0.0"/>
     <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" /> 
+    <import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
 	<import addon="script.module.livestreamer" optional="true"/>
-	
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Filmes[/B][/COLOR]</summary>
-    <description lang="en">Os Melhores canais você encontra aqui!</description>
+    <description lang="en">Os Melhores canais vocÃª encontra aqui!</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.zaraseries"
+       name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]"
+       version="1.0.4"
+       provider-name="Zara Series">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]</summary>
+    <description lang="en">As Series mais famosas estÃ£o aqui no [COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Zara_TV"
+       name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]TV[/B][/COLOR]"
+       version="1.0.2"
+       provider-name="By Zara">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]TV[/B][/COLOR]</summary>
+    <description lang="en">Os Melhores canais vocÃª encontra aqui!</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.brazilian.zararepo"
+        name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Repo[/B][/COLOR]"
+        version="1.0.6"
+        provider-name="Zara">
+    <extension point="xbmc.addon.repository" name="Brazilian XBMC Add-on Repository">
+        <info compressed="false">http://raw.githubusercontent.com/ZaraSeries/repo/master/addons.xml</info>
+        <checksum>http://raw.githubusercontent.com/ZaraSeries/repo/master/addons.xml.md5</checksum>
+        <datadir zip="true">http://raw.githubusercontent.com/ZaraSeries/repo/master/repo</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Repo[/B][/COLOR]</summary>
+        <description>O melhor repositorio BR</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.20" provider-name="tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+		<forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+	</extension>
 </addon>
 
 </addons>
