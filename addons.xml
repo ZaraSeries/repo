@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.MediaPlay-TV" name="MediaPlay-TV 4.0" version="4.0" provider-name="HighorIPTV">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" version="3.0.9"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary>Nosso Addon Traz a RevoluÃ§Ã£o do IPTV com esse novo designer agora em nova VersÃ£o a 4.0 2017 Venha Ser surpreender com o novo. o melhor Addon de tv Brasileira atualmente com mais de 2000 canais de servidores</summary>
-        <description>-ADDON TOTALMENTE GRATIS- NÃƒO ACEITE IMITAÃ‡Ã•ES - Nova versÃ£o do Addon que vem a cada dia mais trazendo o melhor do IPTV e de forma GRATIS para o seu bem-Estar atualmente sÃ£o mais de 30.000 pessoas com o Addon MediaPlayTV se tornando o GIGANTE dos Addons BR Venha Curti Esse Novo Conceito De IPTV e nÃ£o se DEIXE ENGANAR com Falsos Addons Aproveite CURTA MINHA PAGINA DO FACEBOOK: https://www.facebook.com/LISTASIPTV/ INSCREVA-SE NO MEU CANAL DO YOUTUBE: https://www.youtube.com/channel/UCowQVNCeBfPbgWuxarAX9qA</description>
-  </extension>
-</addon>
-
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.3.0" provider-name="Avigdor and Nux007">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -61,69 +35,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.zaradesenhos"
-       name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Desenhos[/B][/COLOR]"
-       version="1.0.5"
-       provider-name="Zara Tutoriais">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Desenhos[/B][/COLOR]</summary>
-    <description lang="en">Os melhores desenhos vocÃª encontra aqui!</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.zarafilmes"
-       name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Filmes[/B][/COLOR]"
-       version="1.0.0"
-       provider-name="By Zara">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Filmes[/B][/COLOR]</summary>
-    <description lang="en">Os Melhores canais vocÃª encontra aqui!</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.zaraseries"
        name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]"
        version="1.0.6"
@@ -151,38 +62,6 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]</summary>
     <description lang="en">As Series mais famosas estÃ£o aqui no [COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Series[/B][/COLOR]</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.Zara_TV"
-       name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]TV[/B][/COLOR]"
-       version="1.0.2"
-       provider-name="By Zara">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]TV[/B][/COLOR]</summary>
-    <description lang="en">Os Melhores canais vocÃª encontra aqui!</description>
     <platform>all</platform>
   </extension>
 </addon>
