@@ -66,14 +66,37 @@
   </extension>
 </addon>
 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.brazilian.zararepo"
         name="[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Repo[/B][/COLOR]"
-        version="1.0.6"
+        version="1.0.7"
         provider-name="Zara">
-    <extension point="xbmc.addon.repository" name="Brazilian XBMC Add-on Repository">
+    <extension point="xbmc.addon.repository" name="Zara Repo">
+	<dir>
         <info compressed="false">http://raw.githubusercontent.com/ZaraSeries/repo/master/addons.xml</info>
         <checksum>http://raw.githubusercontent.com/ZaraSeries/repo/master/addons.xml.md5</checksum>
         <datadir zip="true">http://raw.githubusercontent.com/ZaraSeries/repo/master/repo</datadir>
+	</dir>
+	<dir>
+        <info compressed="false">https://raw.githubusercontent.com/I-A-C/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/I-A-C/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/I-A-C/zips/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/123Venom/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/123Venom/zips/master/</datadir>
+    </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>[COLOR white][B]Zara[/B][/COLOR] [COLOR cyan][B]Repo[/B][/COLOR]</summary>
