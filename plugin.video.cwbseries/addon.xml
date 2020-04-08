@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.cwbserie"
+<addon id="plugin.video.cwbseries"
        name="[COLOR white][B]CwB[/B][/COLOR] [COLOR blue][B]Series[/B][/COLOR]"
        version="1.0.0"
        provider-name="CwB Series">
@@ -25,9 +25,10 @@
   
   	
   <extension point="xbmc.addon.metadata">
-    <summary>DESCRIÇÃO 1</summary>
+    <summary>CwB Series</summary>
     <description>
-        DESCRIÇÃO 2
+        Add-on criado para trazer o melhor conteudo de series, totalmente free!
+        Reportem Bugs!
              
     </description>
     <platform>all</platform>
