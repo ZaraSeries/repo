@@ -16,8 +16,8 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">TV Online</summary>
-    <description lang="en">TV ONLINE BY:IKE</description>
+    <summary lang="en">dBelli Filmes e Series</summary>
+    <description lang="en">BY: dBelli</description>
     <platform>all</platform>
   </extension>
 </addon>
