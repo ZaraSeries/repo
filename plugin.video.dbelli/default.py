@@ -67,7 +67,7 @@ else: SOURCES = []
 
 def addon_log(string):
     if debug == 'true':
-        xbmc.log("[addon.ike-%s]: %s" %(addon_version, string))
+        xbmc.log("[addon.dbelli-%s]: %s" %(addon_version, string))
 
 
 def makeRequest(url, headers=None):
@@ -208,7 +208,7 @@ def addSource(url=None):
             b.close()
         addon.setSetting('new_url_source', "")
         addon.setSetting('new_file_source', "")
-        xbmc.executebuiltin("XBMC.Notification(ike,New source added.,5000,"+icon+")")
+        xbmc.executebuiltin("XBMC.Notification(dbelli,New source added.,5000,"+icon+")")
         if not url is None:
             if 'xbmcplus.xb.funpic.de' in url:
                 xbmc.executebuiltin("XBMC.Container.Update(%s?mode=14,replace)" %sys.argv[0])
@@ -2058,7 +2058,7 @@ def urlsolver(url):
         else:
             resolver = resolved
     else:
-        xbmc.executebuiltin("XBMC.Notification(ike,Urlresolver donot support this domain. - ,5000)")
+        xbmc.executebuiltin("XBMC.Notification(dbelli,Urlresolver donot support this domain. - ,5000)")
     return resolver
 def play_playlist(name, mu_playlist,queueVideo=None):
         playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
@@ -2121,12 +2121,12 @@ def play_playlist(name, mu_playlist,queueVideo=None):
 
 def download_file(name, url):
         if addon.getSetting('save_location') == "":
-            xbmc.executebuiltin("XBMC.Notification('ike','Choose a location to save files.',15000,"+icon+")")
+            xbmc.executebuiltin("XBMC.Notification('dbelli','Choose a location to save files.',15000,"+icon+")")
             addon.openSettings()
         params = {'url': url, 'download_path': addon.getSetting('save_location')}
         downloader.download(name, params)
         dialog = xbmcgui.Dialog()
-        ret = dialog.yesno('ike', 'Do you want to add this file as a source?')
+        ret = dialog.yesno('dbelli', 'Do you want to add this file as a source?')
         if ret:
             addSource(os.path.join(addon.getSetting('save_location'), name))
 
@@ -2186,7 +2186,7 @@ def addDir(name,url,mode,iconimage,fanart,description,genre,date,credits,showcon
                 contextMenu.append(('Download','XBMC.RunPlugin(%s?url=%s&mode=9&name=%s)'
                                     %(sys.argv[0], urllib.quote_plus(url), urllib.quote_plus(name))))
             elif showcontext == 'fav':
-                contextMenu.append(('Remove from ike Favorites','XBMC.RunPlugin(%s?mode=6&name=%s)'
+                contextMenu.append(('Remove from dbelli Favorites','XBMC.RunPlugin(%s?mode=6&name=%s)'
                                     %(sys.argv[0], urllib.quote_plus(name))))
             if showcontext == '!!update':
                 fav_params2 = (
@@ -2195,7 +2195,7 @@ def addDir(name,url,mode,iconimage,fanart,description,genre,date,credits,showcon
                     )
                 contextMenu.append(('[COLOR yellow]!!update[/COLOR]','XBMC.RunPlugin(%s)' %fav_params2))
             if not name in FAV:
-                contextMenu.append(('Add to ike Favorites','XBMC.RunPlugin(%s?mode=5&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
+                contextMenu.append(('Add to dbelli Favorites','XBMC.RunPlugin(%s?mode=5&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
                          %(sys.argv[0], urllib.quote_plus(name), urllib.quote_plus(url), urllib.quote_plus(iconimage), urllib.quote_plus(fanart), mode)))
             liz.addContextMenuItems(contextMenu)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
@@ -2381,7 +2381,7 @@ def addLink(url,name,iconimage,fanart,description,genre,date,showcontext,playlis
             #contextMenu = []
             if showcontext == 'fav':
                 contextMenu.append(
-                    ('Remove from ike Favorites','XBMC.RunPlugin(%s?mode=6&name=%s)'
+                    ('Remove from dbelli Favorites','XBMC.RunPlugin(%s?mode=6&name=%s)'
                      %(sys.argv[0], urllib.quote_plus(name)))
                      )
             elif not name in FAV:
@@ -2393,7 +2393,7 @@ def addLink(url,name,iconimage,fanart,description,genre,date,showcontext,playlis
                     fav_params += 'playlist='+urllib.quote_plus(str(playlist).replace(',','||'))
                 if regexs:
                     fav_params += "&regexs="+regexs
-                contextMenu.append(('Add to ike Favorites','XBMC.RunPlugin(%s)' %fav_params))
+                contextMenu.append(('Add to dbelli Favorites','XBMC.RunPlugin(%s)' %fav_params))
             liz.addContextMenuItems(contextMenu)
         if not playlist is None:
             if addon.getSetting('add_playlist') == "false":
@@ -2716,13 +2716,13 @@ elif mode==17:
             else:
                 playsetresolved(url,name,iconimage,setresolved)
         else:
-            xbmc.executebuiltin("XBMC.Notification(ike,Failed to extract regex. - "+"this"+",4000,"+icon+")")
+            xbmc.executebuiltin("XBMC.Notification(dbelli,Failed to extract regex. - "+"this"+",4000,"+icon+")")
 elif mode==18:
     addon_log("youtubedl")
     try:
         import youtubedl
     except Exception:
-        xbmc.executebuiltin("XBMC.Notification(ike,Please [COLOR yellow]install Youtube-dl[/COLOR] module ,10000,"")")
+        xbmc.executebuiltin("XBMC.Notification(dbelli,Please [COLOR yellow]install Youtube-dl[/COLOR] module ,10000,"")")
     stream_url=youtubedl.single_YD(url)
     playsetresolved(stream_url,name,iconimage)
 elif mode==19:
@@ -2751,14 +2751,14 @@ elif mode==55:
         newStr = keyboard.getText()
         if newStr==parentalblockedpin:
             addon.setSetting('parentalblocked', "false")
-            xbmc.executebuiltin("XBMC.Notification(ike,Parental Block Disabled,5000,"+icon+")")
+            xbmc.executebuiltin("XBMC.Notification(dbelli,Parental Block Disabled,5000,"+icon+")")
         else:
-            xbmc.executebuiltin("XBMC.Notification(ike,Wrong Pin??,5000,"+icon+")")
+            xbmc.executebuiltin("XBMC.Notification(dbelli,Wrong Pin??,5000,"+icon+")")
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 elif mode==56:
     addon_log("disable lock")
     addon.setSetting('parentalblocked', "true")
-    xbmc.executebuiltin("XBMC.Notification(ike,Parental block enabled,5000,"+icon+")")
+    xbmc.executebuiltin("XBMC.Notification(dbelli,Parental block enabled,5000,"+icon+")")
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
 elif mode==53:
